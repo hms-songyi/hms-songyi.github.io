@@ -55,7 +55,11 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/archives">所有文章</a></li>
+	        
+				<li><a href="/tags">tags</a></li>
+	        
+				<li><a href="/about">about</a></li>
 	        
 			</ul>
 		</nav>
@@ -77,13 +81,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="github" target="_blank" href="http://hms-songyi.github.io/" title="github"><i class="icon-github"></i></a>
 		        
 			</div>
 		</nav>
@@ -113,29 +111,31 @@
 			
 				
 			
+				
+			
+				
+			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="github" target="_blank" href="http://hms-songyi.github.io/" title="github"><i class="icon-github"></i></a>
 			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 25%"><a href="/archives">所有文章</a></li>
+		        
+					<li style="width: 25%"><a href="/tags">tags</a></li>
+		        
+					<li style="width: 25%"><a href="/about">about</a></li>
 		        
 				</ul>
 			</nav>
@@ -152,26 +152,59 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-test1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-to-build-your-blogs-system-using-hexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/16/test1/">test1</a>
+      <a class="article-title" href="/2020/08/16/to-build-your-blogs-system-using-hexo/">git+github+hexo+MarkdownPad创建自己博客系统</a>
     </h1>
   
 
         
-        <a href="/2020/08/16/test1/" class="archive-article-date">
-  	<time datetime="2020-08-16T10:49:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-16</time>
+        <a href="/2020/08/16/to-build-your-blogs-system-using-hexo/" class="archive-article-date">
+  	<time datetime="2020-08-16T11:58:47.263Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
+        <h1 id="1-准备"><a href="#1-准备" class="headerlink" title="1 准备"></a>1 准备</h1><br />
+## 1.1 安装软件 ##
+软件 | 作用 
+-----|------
+git for windows    | 执行git命令   
+node.js for windows    | 安装hexo的前提    
+hexo    | 一个简单、快速、强大的博客发布工具
+MarkdownPAD  | 编写md文件的工具
+
+<br />
+### 1.1.1 安装git for windows ###
+https://git-for-windows.github.io/
+
+<br />
+### 1.1.2 安装nodejs for windows ###
+https://nodejs.org/en/
+
+<br />
+### 1.1.3 安装hexo ###
+安装好nodejs后，系统会自带npm命令。
+安装hexo
+npm install -g hexo
+这里有warn可以不用管
+![](http://i.imgur.com/3RDXwT7.jpg)
+
+<br />
+#### 1.1.4 MarkdownPAD ####
+http://markdownpad.com/
+
+<p>对于2.0来说，它的注册如下：<br>邮箱：<br><a href="mailto:&#x53;&#x6f;&#x61;&#114;&#x33;&#x36;&#x30;&#64;&#108;&#x69;&#x76;&#101;&#46;&#x63;&#x6f;&#x6d;">&#x53;&#x6f;&#x61;&#114;&#x33;&#x36;&#x30;&#64;&#108;&#x69;&#x76;&#101;&#46;&#x63;&#x6f;&#x6d;</a><br>授权秘钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<p>MarkdownPad Pro版最有优势的地方就是能否处理图片，会自动帮你将图片上传到imgur.com，而不用你手动上传到github中，这点异常方便。</p>
+        
+          <a class="article-more-a" href="/2020/08/16/to-build-your-blogs-system-using-hexo/#more">more >></a>
         
       
 
@@ -180,11 +213,37 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/githubs//" class="article-tag-list-link color3">githubs</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/16/test1/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/08/16/to-build-your-blogs-system-using-hexo/">展开全文 >></a>
         </p>
       
 
@@ -214,40 +273,27 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-maven_pack_without_unit_test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/16/hello-world/">Hello World</a>
+      <a class="article-title" href="/2020/08/16/maven_pack_without_unit_test/">Maven：打包时不执行单元测试</a>
     </h1>
   
 
         
-        <a href="/2020/08/16/hello-world/" class="archive-article-date">
-  	<time datetime="2020-08-16T10:44:39.576Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-16</time>
+        <a href="/2020/08/16/maven_pack_without_unit_test/" class="archive-article-date">
+  	<time datetime="2020-08-16T11:58:47.262Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+        <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 不进行 单元测试 --&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-surefire-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.18.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                 <span class="tag">&lt;<span class="name">skipTests</span>&gt;</span>true<span class="tag">&lt;/<span class="name">skipTests</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
       
 
       
@@ -255,11 +301,22 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">maven</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/16/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/08/16/maven_pack_without_unit_test/">展开全文 >></a>
         </p>
       
 
@@ -289,6 +346,651 @@
 
 
   
+    <article id="post-maven_pack_to_one_exec_jar_with_configfiles" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/16/maven_pack_to_one_exec_jar_with_configfiles/">Maven：将所有依赖打包到一个可执行的jar中，且将相关配置文件生成到jar平行的目录中</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/16/maven_pack_to_one_exec_jar_with_configfiles/" class="archive-article-date">
+  	<time datetime="2020-08-16T11:58:47.261Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先在pom.xml中自定义一个变量myOutputDir，我们将可执行的jar包、各种配置文件、其他可执行文件均放置到这个C:\output目录下。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">...</span></span></span><br><span class="line">    &lt;properties&gt;</span><br><span class="line">        <span class="tag">&lt;<span class="name">myOutputDir</span>&gt;</span>C:\output<span class="tag">&lt;/<span class="name">myOutputDir</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>然后我们学习一下Maven常用的变量：</p>
+<blockquote>
+<p>Maven内置变量说明：<br>${basedir} 项目根目录<br>${project.build.directory} 构建目录，缺省为target<br>${project.build.outputDirectory} 构建过程输出目录，缺省为target/classes<br>${project.build.finalName} 产出物名称，缺省为${project.artifactId}-${project.version}<br>${project.packaging} 打包类型，缺省为jar<br>${project.xxx} 当前pom文件的任意节点的内容</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2020/08/16/maven_pack_to_one_exec_jar_with_configfiles/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">maven</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/16/maven_pack_to_one_exec_jar_with_configfiles/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-maven_pack_to_one_exec_jar" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/16/maven_pack_to_one_exec_jar/">Maven：将所有依赖打包到一个可执行的jar中</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/16/maven_pack_to_one_exec_jar/" class="archive-article-date">
+  	<time datetime="2020-08-16T11:58:47.254Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 将所有依赖打包进去 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-assembly-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">appendAssemblyId</span>&gt;</span>false<span class="tag">&lt;/<span class="name">appendAssemblyId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">descriptorRefs</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">descriptorRef</span>&gt;</span>jar-with-dependencies<span class="tag">&lt;/<span class="name">descriptorRef</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">descriptorRefs</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">archive</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">manifest</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">mainClass</span>&gt;</span>org.nalai.Main<span class="tag">&lt;/<span class="name">mainClass</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">manifest</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">archive</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">id</span>&gt;</span>make-assembly<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">phase</span>&gt;</span>package<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">goal</span>&gt;</span>assembly<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2020/08/16/maven_pack_to_one_exec_jar/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">maven</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/16/maven_pack_to_one_exec_jar/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-learn_s3_9" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/16/learn_s3_9/">Amazon AWS抓包学习S3： 9、数据加密样例</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/16/learn_s3_9/" class="archive-article-date">
+  	<time datetime="2020-08-16T11:58:47.252Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>参考<br><a target="_blank" rel="noopener" href="http://docs.aws.amazon.com/zh_cn/AmazonS3/latest/dev/sse-c-using-java-sdk.html">http://docs.aws.amazon.com/zh_cn/AmazonS3/latest/dev/sse-c-using-java-sdk.html</a></p>
+        
+          <a class="article-more-a" href="/2020/08/16/learn_s3_9/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">s3</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">aws</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/16/learn_s3_9/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-learn_s3_8" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/16/learn_s3_8/">Amazon AWS抓包学习S3： 8、删除一个桶抓包分析</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/16/learn_s3_8/" class="archive-article-date">
+  	<time datetime="2020-08-16T11:58:47.242Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>HTTP请求（DELETE方法）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Hypertext Transfer Protocol</span><br><span class="line">    DELETE &#x2F; HTTP&#x2F;1.1\r\n</span><br><span class="line">        [Expert Info (Chat&#x2F;Sequence): DELETE &#x2F; HTTP&#x2F;1.1\r\n]</span><br><span class="line">            [DELETE &#x2F; HTTP&#x2F;1.1\r\n]</span><br><span class="line">            [Severity level: Chat]</span><br><span class="line">            [Group: Sequence]</span><br><span class="line">        Request Method: DELETE</span><br><span class="line">        Request URI: &#x2F;</span><br><span class="line">        Request Version: HTTP&#x2F;1.1</span><br><span class="line">    Host: my-new-bucket-3.s3-us-west-2.amazonaws.com\r\n</span><br><span class="line">    X-Amz-Date: 20160117T140249Z\r\n</span><br><span class="line">     [truncated]Authorization: AWS4-HMAC-SHA256 Credential&#x3D;AKIAJPB5HL3WWWTZCIIQ&#x2F;20160117&#x2F;us-west-2&#x2F;s3&#x2F;aws4_request, SignedHeaders&#x3D;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature&#x3D;237beb4a2a8e834498a749cf0c120e0b81c744f16</span><br><span class="line">    User-Agent: aws-sdk-java&#x2F;1.10.42 Windows_7&#x2F;6.1 Java_HotSpot(TM)_64-Bit_Server_VM&#x2F;24.79-b02&#x2F;1.7.0_79\r\n</span><br><span class="line">    x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\r\n</span><br><span class="line">    Content-Type: application&#x2F;octet-stream\r\n</span><br><span class="line">    Connection: Keep-Alive\r\n</span><br><span class="line">    \r\n</span><br><span class="line">    [Full request URI: http:&#x2F;&#x2F;my-new-bucket-3.s3-us-west-2.amazonaws.com&#x2F;]</span><br><span class="line">    [HTTP request 1&#x2F;1]</span><br><span class="line">    [Response in frame: 13]</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2020/08/16/learn_s3_8/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">s3</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">aws</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/16/learn_s3_8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-learn_s3_7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/16/learn_s3_7/">Amazon AWS抓包学习S3： 7、删除一个文件抓包分析</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/16/learn_s3_7/" class="archive-article-date">
+  	<time datetime="2020-08-16T11:58:47.241Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;Deleting an object\n&quot;</span>);</span><br><span class="line">s3.deleteObject(bucketName, key);</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2020/08/16/learn_s3_7/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">s3</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">aws</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/16/learn_s3_7/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-learn_s3_6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/16/learn_s3_6/">Amazon AWS抓包学习S3： 6、对一个对象产生签名URL</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/16/learn_s3_6/" class="archive-article-date">
+  	<time datetime="2020-08-16T11:58:47.234Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">GeneratePresignedUrlRequest request = <span class="keyword">new</span> GeneratePresignedUrlRequest(bucketName, key);</span><br><span class="line">System.out.println(s3.generatePresignedUrl(request));</span><br></pre></td></tr></table></figure>
+
+<p>事实上，根本就不会对服务端进行请求。本地计算生成URL而已。默认过期时间是15分钟（900秒）</p>
+<p><a target="_blank" rel="noopener" href="http://my-new-bucket-3.s3-us-west-2.amazonaws.com/MyObjectKey?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20160117T135513Z&amp;X-Amz-SignedHeaders=host&amp;**X-Amz-Expires=900**&amp;X-Amz-Credential=AKIAJPB5HL3WWWTZCIIQ/20160117/us-west-2/s3/aws4_request&amp;X-Amz-Signature=bcea335dd95b5419eee0ad26e050ddfb3621009b6b9213647c2e2b5711a12296">http://my-new-bucket-3.s3-us-west-2.amazonaws.com/MyObjectKey?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20160117T135513Z&amp;X-Amz-SignedHeaders=host&amp;**X-Amz-Expires=900**&amp;X-Amz-Credential=AKIAJPB5HL3WWWTZCIIQ%2F20160117%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Signature=bcea335dd95b5419eee0ad26e050ddfb3621009b6b9213647c2e2b5711a12296</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">s3</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">aws</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/16/learn_s3_6/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-learn_s3_5" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/16/learn_s3_5/">Amazon AWS抓包学习S3： 5、下载一个文件抓包分析</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/16/learn_s3_5/" class="archive-article-date">
+  	<time datetime="2020-08-16T11:58:47.233Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">GetObjectRequest srcObjectRequest = <span class="keyword">new</span> GetObjectRequest(bucketName, key);</span><br><span class="line">File desFile = <span class="keyword">new</span> File(<span class="string">&quot;C:\\hello_s3.txt&quot;</span>);</span><br><span class="line">s3.getObject(srcObjectRequest, desFile);</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2020/08/16/learn_s3_5/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">s3</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">aws</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/16/learn_s3_5/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-learn_s3_4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/16/learn_s3_4/">Amazon AWS抓包学习S3： 4、上传一个文件抓包分析</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/16/learn_s3_4/" class="archive-article-date">
+  	<time datetime="2020-08-16T11:58:47.232Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">File file = <span class="keyword">new</span> File(<span class="string">&quot;hello2.txt&quot;</span>);</span><br><span class="line">s3.putObject(<span class="keyword">new</span> PutObjectRequest(bucketName, key, file).withCannedAcl(CannedAccessControlList.PublicRead));</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2020/08/16/learn_s3_4/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">s3</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">aws</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/16/learn_s3_4/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+    </nav>
   
 
 
@@ -316,7 +1018,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -380,6 +1082,62 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">openstack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ceph</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">fuel</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">s3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">intellij</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">双向链表</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">单向链表</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">aws</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">maven</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -427,41 +1185,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-friends" q-show="friends">
   		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
     	</section>
     
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">Hello, Tiger!</div>
   	  	
     	</section>
     
